@@ -58,9 +58,9 @@ const links = [
       </ul>
     </nav>
     <div class="flex items-center gap-8">
-      <BaseButton text="primary" bg="yellow" class="max-h-7 text-nowrap px-3.5"
-        >Buy Now</BaseButton
-      >
+      <BaseButton text="primary" bg="yellow" class="max-h-7 text-nowrap px-3.5">
+        Buy Now
+      </BaseButton>
       <MenuBurger class="sm:hidden" />
     </div>
   </header>
