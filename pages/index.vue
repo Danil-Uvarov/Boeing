@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 import TheHeader from "~/components/TheHeader.vue";
 import SectionBlowDoors from "~/components/BlowDoorsSection.vue";
 import YellowLogoStrip from "~/components/YellowLogoStripSection.vue";
@@ -16,23 +15,21 @@ import TheFooter from "~/components/TheFooter.vue";
 </script>
 
 <template>
-  <div class="flex flex-col items-center w-full  overflow-x-hidden">
+  <div class="flex w-full flex-col items-center overflow-x-hidden">
     <TheHeader />
-    <SectionBlowDoors/>
-    <YellowLogoStrip/>
+    <SectionBlowDoors />
+    <YellowLogoStrip />
     <WTFBoeing />
-    <BoeingNews/>
-    <InvboeSection/>
-    <VaultSection/>
-    <CommunitySection/>
-    <TokenomicSection/>
-    <PercentsSection/>
-    <ExcitingLifeSection/>
-    <InvitationSection/>
-    <TheFooter/>
+    <BoeingNews />
+    <InvboeSection />
+    <VaultSection />
+    <CommunitySection />
+    <TokenomicSection />
+    <PercentsSection />
+    <ExcitingLifeSection />
+    <InvitationSection />
+    <TheFooter />
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
