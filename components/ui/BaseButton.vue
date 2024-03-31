@@ -34,7 +34,7 @@ const currentIcon = computed(() => icons[props.nameIcon]);
 
 <template>
   <button
-    class="flex h-full w-full items-center justify-center gap-1 rounded-[30px] py-1.5 text-[10px] font-bold md:rounded-[40px]"
+    class="flex h-full w-full items-center justify-center gap-1 rounded-[30px] py-1.5 text-[10px] font-bold sm:text-base md:rounded-[40px]"
     :class="{
       'text-primary': textColor === 'primary',
       'text-white': textColor === 'white',

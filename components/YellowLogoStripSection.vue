@@ -5,12 +5,26 @@ import IconFouLanes from "assets/icons/IconFouLanes.vue";
 
 <template>
   <section
-    class="flex max-h-[31px] w-full items-center justify-center gap-[107px] bg-yellow py-1 sm:max-h-[52px] sm:gap-56"
+    class="flex max-h-[31px] w-full items-center justify-center gap-6 bg-yellow py-1 sm:max-h-[52px] sm:gap-6 md:gap-28 xl:gap-44"
   >
-    <IconFouLanes />
-    <IconLogo class="ms:max-h-[52px] max-h-[31px] max-w-[178px]" />
-    <IconFouLanes />
-    <IconLogo class="ms:max-h-[52px] max-h-[31px] max-w-[178px]" />
-    <IconFouLanes />
+    <IconFouLanes
+      class="ms:max-h-[52px] hidden h-full max-h-[31px] w-full max-w-[33px] sm:block"
+    />
+    <img
+      src="/boeing-logo.webp"
+      alt=""
+      class="ms:max-h-[52px] hidden h-full max-h-[31px] w-full max-w-[178px] sm:block"
+    />
+    <IconFouLanes
+      class="ms:max-h-[52px] h-full max-h-[31px] w-full max-w-[33px]"
+    />
+    <img
+      src="/boeing-logo.webp"
+      alt=""
+      class="ms:max-h-[52px] h-full max-h-[31px] w-full max-w-[178px]"
+    />
+    <IconFouLanes
+      class="ms:max-h-[52px] h-full max-h-[31px] w-full max-w-[33px]"
+    />
   </section>
 </template>

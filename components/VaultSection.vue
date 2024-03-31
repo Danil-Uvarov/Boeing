@@ -25,42 +25,45 @@ const images = [
 </script>
 
 <template>
-  <section class="relative w-full">
-    <div class="container">
-      <div
-        class="flex flex-col items-center rounded-[28px] bg-darkBlue pb-12 pt-9 sm:mt-32"
-      >
-        <div class="px-[2rem] sm:pt-28">
-          <h2 class="text-nowrap text-4xl font-bold text-yellow sm:text-5xl">
-            The Vault
-          </h2>
-          <h2
-            class="pt-1 text-center text-[10px] text-white sm:pt-6 sm:text-lg"
+  <section class="w-full">
+    <div class="">
+      <div class="relative">
+        <div class="relative flex flex-col items-center pb-12 pt-9 sm:mt-32">
+          <div
+            class="container absolute left-0 top-0 -z-10 h-full w-full rounded-[28px] bg-darkBlue"
+          ></div>
+          <div class="px-[2rem] sm:pt-28">
+            <h2 class="text-nowrap text-4xl font-bold text-yellow sm:text-5xl">
+              The Vault
+            </h2>
+            <h2
+              class="pt-1 text-center text-[10px] text-white sm:pt-6 sm:text-lg"
+            >
+              Trade $INVBOE today
+            </h2>
+          </div>
+          <swiper
+            :slides-per-view="1.2"
+            :space-between="32"
+            class="z-20 mt-11 w-full max-w-[260px] sm:max-w-full"
+            :centeredSlides="true"
           >
-            Trade $INVBOE today
-          </h2>
+            <swiper-slide v-for="(image, index) in images" :key="index">
+              <img :src="image.img" alt="" class="w-full object-cover" />
+            </swiper-slide>
+          </swiper>
         </div>
-        <swiper
-          :slides-per-view="1"
-          :space-between="32"
-          class="mt-11 max-w-[260px] sm:max-w-[1120px]"
-          :centeredSlides="true"
-        >
-          <swiper-slide v-for="(image, index) in images" :key="index">
-            <img :src="image.img" alt="" class="object-cover" />
-          </swiper-slide>
-        </swiper>
+        <img
+          src="/public/cloud-ballon.webp"
+          alt=""
+          class="absolute -left-28 top-52 -z-10 h-[102px] w-[223px]"
+        />
+        <img
+          src="/public/cloud-big.webp"
+          alt=""
+          class="absolute -bottom-36 -right-48 z-10 sm:-bottom-56"
+        />
       </div>
     </div>
-    <img
-      src="/public/cloud-ballon.webp"
-      alt=""
-      class="absolute -left-20 top-1 -z-10 h-[102px] w-[223px]"
-    />
-    <img
-      src="/public/cloud-big.webp"
-      alt=""
-      class="absolute -bottom-[45%] -right-60 z-10"
-    />
   </section>
 </template>

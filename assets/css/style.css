@@ -1,6 +1,11 @@
 @font-face {
     font-family: "Inter";
     font-weight: 400;
+    src: url(/assets/fonts/Inter-Light.ttf);
+}
+@font-face {
+    font-family: "Inter";
+    font-weight: 500;
     src: url(/assets/fonts/Inter-Regular.ttf);
 }
 
@@ -71,7 +76,8 @@
 html {
     font-family: "Roboto", Arial, sans-serif;
 }
-*{
-    background:none;
+
+* {
+    background: none;
 
 }

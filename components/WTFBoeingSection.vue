@@ -11,13 +11,13 @@ import BaseButton from "~/components/ui/BaseButton.vue";
       class="absolute inset-0 h-full w-full object-cover"
     />
     <div
-      class="container relative flex flex-col items-center pb-28 sm:flex-row-reverse sm:gap-20"
+      class="container relative flex w-full flex-col items-center pb-28 sm:flex-row-reverse sm:gap-20"
     >
       <img
         src="/public/wtf-airplane.webp"
         loading="lazy"
         alt=""
-        class="z-0 -mt-4 max-h-[184px] max-w-[246px] sm:max-h-[342px] sm:max-w-[459px]"
+        class="-mt-4 h-full max-h-[184px] w-full max-w-[246px] object-contain sm:max-h-[342px] sm:max-w-[459px]"
       />
       <div
         class="-mt-5 flex flex-col items-center rounded-[28px] bg-sky px-[2rem] py-[30px] sm:mt-0 sm:max-w-[980px] sm:items-start sm:p-4"
@@ -27,14 +27,15 @@ import BaseButton from "~/components/ui/BaseButton.vue";
         >
           WTF IS UP WITH
           <mark
-            class="font-boeing text-yellow"
-            style="-webkit-text-stroke: 1.5px #0033a1"
-            >BOEING</mark
+            class="font-boeing font-bold text-yellow"
+            style="-webkit-text-stroke: 4px #0033a1"
           >
+            BOEING
+          </mark>
           <span> ?</span>
         </h2>
         <h3
-          class="text-nowrap pt-4 font-inter text-xs font-black text-primary sm:pt-6"
+          class="text-nowrap pt-4 font-inter text-xs font-black text-primary sm:pt-6 sm:text-base"
         >
           Don’t risk your life fly
           <mark style="-webkit-text-stroke: 0.5px #0033a1" class="text-yellow">

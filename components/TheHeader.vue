@@ -39,9 +39,9 @@ const links = [
   <header
     class="container flex w-full items-center justify-center gap-[67px] py-[30px]"
   >
-    <img src="/boeing-logo.webp" alt="" />
-    <nav class="hidden gap-[32px] sm:flex">
-      <ul class="flex items-center gap-[32px]">
+    <img src="/boeing-logo.webp" alt="" class="w-full" />
+    <nav class="hidden w-full gap-[32px] sm:flex">
+      <ul class="gap-[32px w-full] flex items-center">
         <li
           v-for="(link, index) in links"
           :key="index"
