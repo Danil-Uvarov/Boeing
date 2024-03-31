@@ -4,6 +4,12 @@ import IconInvboe from "assets/icons/IconInvboe.vue";
 
 <template>
   <section class="">
+    <!--    <img-->
+    <!--      src="/public/cloud-big.webp"-->
+    <!--      alt=""-->
+    <!--      class="absolute -bottom-14 -left-[190px] z-30 h-[268px] w-[406px]"-->
+    <!--    />-->
+    <!--    -->
     <div class="relative grid-cols-2 pt-12 sm:container sm:grid">
       <div class="container w-full sm:p-0">
         <h3

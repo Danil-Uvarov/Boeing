@@ -43,16 +43,16 @@ const images = [
             </h2>
           </div>
           <swiper
-            :slides-per-view="1.2"
-            :space-between="32"
-            class="z-20 mt-11 max-h-[720px] w-full max-w-[260px] sm:max-w-full"
+            :slides-per-view="1.5"
+            :space-between="24"
+            class="z-20 mt-11 max-h-[720px] w-full sm:max-w-full"
             :centeredSlides="true"
           >
             <swiper-slide v-for="(image, index) in images" :key="index">
               <img
                 :src="image.img"
                 alt=""
-                class="max-h-[720px] w-full object-contain"
+                class="max-h-[720px] object-contain"
               />
             </swiper-slide>
           </swiper>

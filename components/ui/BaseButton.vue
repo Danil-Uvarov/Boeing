@@ -8,8 +8,8 @@ import TwitterBlue from "assets/icons/IconTwitterBlue.vue";
 
 const props = defineProps<{
   text: "yellow" | "white" | "primary";
-  bg?: "yellow" | "white" | "none";
   border?: boolean;
+  bg?: "yellow" | "white" | "none" | "primary";
   nameIcon?:
     | "telegram"
     | "twitter"
@@ -34,13 +34,14 @@ const currentIcon = computed(() => icons[props.nameIcon]);
 
 <template>
   <button
-    class="flex h-full w-full items-center justify-center gap-1 rounded-[30px] py-1.5 text-[10px] font-bold sm:text-base md:rounded-[40px]"
+    class="flex h-full max-h-[48px] w-full items-center justify-center gap-1 rounded-[30px] py-1.5 text-[10px] font-bold sm:text-base md:rounded-[40px]"
     :class="{
       'text-primary': textColor === 'primary',
       'text-white': textColor === 'white',
       'text-yellow': textColor === 'yellow',
       'bg-yellow': bgColor === 'yellow',
       'bg-white': bgColor === 'white',
+      'bg-primary': bgColor === 'primary',
       'border border-white  ': border,
     }"
   >

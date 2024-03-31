@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import TheHeader from "~/components/TheHeader.vue";
-import SectionBlowDoors from "~/components/BlowDoorsSection.vue";
+import BlowDoorsSection from "~/components/BlowDoorsSection.vue";
 import YellowLogoStrip from "~/components/YellowLogoStripSection.vue";
 import WTFBoeing from "~/components/WTFBoeingSection.vue";
 import BoeingNews from "~/components/BoeingNewsSection.vue";
@@ -18,7 +18,7 @@ import WorkingSection from "~/components/WorkingSection.vue";
 <template>
   <div class="flex w-full flex-col items-center overflow-x-hidden">
     <TheHeader />
-    <SectionBlowDoors />
+    <BlowDoorsSection />
     <YellowLogoStrip />
     <WTFBoeing />
     <BoeingNews />

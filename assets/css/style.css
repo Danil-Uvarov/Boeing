@@ -71,6 +71,11 @@
     font-weight: 700;
     src: url(/assets/fonts/BOEING-style.ttf);
 }
+@font-face {
+    font-family: "Boeing";
+    font-weight: 300;
+    src: url(/assets/fonts/BOEING-style.ttf);
+}
 
 :root,
 html {

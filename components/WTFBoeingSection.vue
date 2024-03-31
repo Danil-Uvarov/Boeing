@@ -4,38 +4,37 @@ import BaseButton from "~/components/ui/BaseButton.vue";
 </script>
 
 <template>
-  <section class="relative w-full sm:pt-28">
+  <section class="relative z-10 w-full sm:pt-28">
     <img
       src="/public/background-skye.webp"
       alt=""
-      class="absolute inset-0 h-full w-full object-cover"
+      class="absolute inset-0 z-20 h-full w-full object-cover"
     />
     <div
-      class="container relative flex w-full flex-col items-center pb-28 sm:flex-row-reverse sm:gap-20"
+      class="container relative z-30 flex w-full flex-col items-center pb-28 lg:flex-row lg:gap-20"
     >
-      <img
-        src="/public/wtf-airplane.webp"
-        loading="lazy"
-        alt=""
-        class="-mt-4 h-full max-h-[184px] w-full max-w-[246px] object-contain sm:max-h-[342px] sm:max-w-[459px]"
-      />
       <div
-        class="-mt-5 flex flex-col items-center rounded-[28px] bg-sky px-[2rem] py-[30px] sm:mt-0 sm:max-w-[980px] sm:items-start sm:p-4"
+        class="mt-10 flex flex-col rounded-[28px] bg-sky px-[2rem] py-4 sm:mt-0 sm:max-w-[980px] sm:items-start sm:p-4 xl:py-[30px]"
       >
         <h2
-          class="text-center text-4xl font-bold text-primary sm:text-start sm:text-[56px]"
+          class="text-2xl font-bold text-primary sm:text-start sm:text-[56px]"
         >
           WTF IS UP WITH
           <mark
-            class="font-boeing font-bold text-yellow"
-            style="-webkit-text-stroke: 4px #0033a1"
+            class="inline-block font-boeing text-2xl font-light text-yellow sm:mt-4 sm:text-5xl 2xl:mt-0 2xl:text-5xl"
+            style="
+              @media (min-width: 768px) {
+                -webkit-text-stroke: 3px #0033a1;
+              }
+              -webkit-text-stroke: 1px #0033a1;
+            "
           >
             BOEING
           </mark>
           <span> ?</span>
         </h2>
         <h3
-          class="text-nowrap pt-4 font-inter text-xs font-black text-primary sm:pt-6 sm:text-base"
+          class="text-nowrap pt-1 font-inter text-xs font-black text-primary sm:text-base lg:pt-6"
         >
           Don’t risk your life fly
           <mark style="-webkit-text-stroke: 0.5px #0033a1" class="text-yellow">
@@ -43,9 +42,7 @@ import BaseButton from "~/components/ui/BaseButton.vue";
           </mark>
           Instead.
         </h3>
-        <p
-          class="pt-3.5 text-center font-inter text-[8px] sm:text-start sm:text-base"
-        >
+        <p class="pt-3.5 font-inter text-[8px] sm:text-start sm:text-base">
           But it’s more than just a coin, it’s tokenized winning.
           <mark class="font-bold">$INVBOE</mark>
           is effortless domination of the sky, Inverse Boeing is nothing like
@@ -66,9 +63,10 @@ import BaseButton from "~/components/ui/BaseButton.vue";
         </BaseButton>
       </div>
       <img
-        src="/public/cloud-big.webp"
+        src="/public/wtf-airplane.webp"
+        loading="lazy"
         alt=""
-        class="absolute -bottom-14 -left-[190px] z-10 h-[268px] w-[406px]"
+        class="-mt-4 h-full max-h-[342px] w-full max-w-[342px] object-contain lg:max-w-[259px] xl:max-h-[342px] xl:max-w-[459px]"
       />
     </div>
   </section>

@@ -34,7 +34,7 @@ const news = [
 </script>
 
 <template>
-  <section class="container relative z-0 w-full">
+  <section class="container relative z-20 w-full">
     <div
       class="-mt-7 flex flex-col items-center rounded-[28px] bg-darkBlue px-[2rem] pb-12 pt-9"
     >
