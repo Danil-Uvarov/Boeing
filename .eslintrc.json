@@ -51,7 +51,10 @@
     //        "alphabetical": false
     //      }
     //    ],
-    "object-curly-spacing": ["error", "always"],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
     "padding-line-between-statements": [
       "error",
       {
@@ -59,11 +62,32 @@
         "prev": "import",
         "next": "import"
       },
-      { "blankLine": "always", "prev": "*", "next": ["return", "function"] },
-      { "blankLine": "always", "prev": "function", "next": "*" }
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": [
+          "return",
+          "function"
+        ]
+      },
+      {
+        "blankLine": "always",
+        "prev": "function",
+        "next": "*"
+      }
     ],
     "space-before-blocks": "error",
-    "key-spacing": ["error", { "mode": "strict" }],
-    "keyword-spacing": ["error", { "before": true }]
+    "key-spacing": [
+      "error",
+      {
+        "mode": "strict"
+      }
+    ],
+    "keyword-spacing": [
+      "error",
+      {
+        "before": true
+      }
+    ]
   }
 }

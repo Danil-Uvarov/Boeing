@@ -41,24 +41,22 @@ const links = [
   >
     <img src="/boeing-logo.webp" alt="" />
     <nav class="hidden gap-[32px] sm:flex">
-      <div
-        class="border-2 border-b-primary bg-white px-4 py-1.5 font-inter text-2xl font-bold text-yellow"
-        style="-webkit-text-stroke: 1px #0033a1"
-      >
-        <NuxtLink to="">Home</NuxtLink>
-      </div>
-      <ul
-        class="flex items-center gap-[32px]"
-        v-for="(link, index) in links"
-        :key="index"
-      >
-        <li class="text-nowrap font-inter text-2xl font-bold text-primary">
+      <ul class="flex items-center gap-[32px]">
+        <li
+          v-for="(link, index) in links"
+          :key="index"
+          class="cursor-pointer text-nowrap rounded-[32px] border-b-4 border-b-white px-4 py-1.5 font-inter text-2xl font-bold text-primary hover:border-b-blue hover:text-yellow"
+        >
           <NuxtLink :to="link.to">{{ link.name }}</NuxtLink>
         </li>
       </ul>
     </nav>
     <div class="flex items-center gap-8">
-      <BaseButton text="primary" bg="yellow" class="max-h-7 text-nowrap px-3.5">
+      <BaseButton
+        text="primary"
+        bg="yellow"
+        class="max-h-7 text-nowrap px-3.5 sm:px-6 sm:py-1.5"
+      >
         Buy Now
       </BaseButton>
       <MenuBurger class="sm:hidden" />

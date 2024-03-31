@@ -23,6 +23,8 @@ export default {
     extend: {
       fontFamily: {
         inter: ["Inter"],
+        boeing: ["Boeing"],
+        kanit: ["Kanit"],
       },
 
       colors: {

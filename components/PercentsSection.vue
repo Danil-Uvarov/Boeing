@@ -1,47 +1,70 @@
 <script setup lang="ts">
 import BaseButton from "~/components/ui/BaseButton.vue";
 
-const percents = [{
-  percent: '25',
-  subtitle: 'Seed'
-}, {
-  percent: '25',
-  subtitle: 'Seed'
-}, {
-  percent: '25',
-  subtitle: 'Seed'
-}, {
-  percent: '25',
-  subtitle: 'Seed'
-}, {
-  percent: '25',
-  subtitle: 'Seed'
-}, {
-  percent: '25',
-  subtitle: 'Seed'
-}, {
-  percent: '25',
-  subtitle: 'Seed'
-}, {
-  percent: '25',
-  subtitle: 'Seed'
-}, {
-  percent: '25',
-  subtitle: 'Seed'
-}]
+const percents = [
+  {
+    percent: "2.5",
+    subtitle: "Seed",
+  },
+  {
+    percent: "5.0",
+    subtitle: "Airdrop/Presale",
+  },
+  {
+    percent: "15",
+    subtitle: "Future Dev",
+  },
+  {
+    percent: "18",
+    subtitle: "Team",
+  },
+  {
+    percent: "1.5",
+    subtitle: "Advisors",
+  },
+  {
+    percent: "7.0",
+    subtitle: "Partnerships",
+  },
+  {
+    percent: "12",
+    subtitle: "Burn",
+  },
+  {
+    percent: "18",
+    subtitle: "Marketing",
+  },
+  {
+    percent: "1.0",
+    subtitle: "Operations",
+  },
+  {
+    percent: "20",
+    subtitle: "Liquidity Provider",
+  },
+];
 </script>
 
 <template>
-  <section class="container flex flex-wrap gap-9 items-center justify-center pt-9">
-    <ul v-for="(percent, index) in percents" :key="index">
-      <li class="flex flex-col gap-2 text-center items-center" style="font-family: 'Kanit'">
-        <h3 class="font-bold text-5xl  bg-clip-text  text-transparent bg-contain bg-[url('/public/background-skye.webp')]">
-          {{
-            percent.percent
-          }}%</h3>
-        <h3 class="font-bold ">{{ percent.subtitle }}</h3>
-      </li>
-    </ul>
-    <BaseButton text="primary" bg="yellow" >Learn More</BaseButton>
+  <section
+    class="container flex flex-col items-center gap-[39px] pt-9 sm:gap-[54px]"
+  >
+    <div class="flex flex-wrap items-center justify-center gap-9">
+      <ul v-for="(percent, index) in percents" :key="index">
+        <li class="flex flex-col items-center gap-2 text-center">
+          <h3
+            class="font-kanit bg-[url('/public/background-skye.webp')] bg-contain bg-clip-text text-5xl font-bold text-transparent sm:text-[100px]"
+          >
+            {{ percent.percent }}%
+          </h3>
+          <h3 class="font-kanit font-bold sm:text-4xl">
+            {{ percent.subtitle }}
+          </h3>
+        </li>
+      </ul>
+    </div>
+    <BaseButton text="primary" bg="yellow" class="max-w-[131px]"
+      >Learn More
+    </BaseButton>
   </section>
 </template>

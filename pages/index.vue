@@ -12,6 +12,7 @@ import PercentsSection from "~/components/PercentsSection.vue";
 import ExcitingLifeSection from "~/components/ExcitingLifeSection.vue";
 import InvitationSection from "~/components/InvitationSection.vue";
 import TheFooter from "~/components/TheFooter.vue";
+import WorkingSection from "~/components/WorkingSection.vue";
 </script>
 
 <template>
@@ -27,6 +28,7 @@ import TheFooter from "~/components/TheFooter.vue";
     <TokenomicSection />
     <PercentsSection />
     <ExcitingLifeSection />
+    <WorkingSection />
     <InvitationSection />
     <TheFooter />
   </div>
