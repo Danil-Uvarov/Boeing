@@ -30,7 +30,7 @@ const images = [
       <div class="relative">
         <div class="relative flex flex-col items-center pb-12 pt-9 sm:mt-32">
           <div
-            class="container absolute left-0 top-0 -z-10 h-full w-full rounded-[28px] bg-darkBlue"
+            class="container absolute inset-x-0 top-0 -z-10 h-full w-full rounded-[28px] bg-darkBlue"
           ></div>
           <div class="px-[2rem] sm:pt-28">
             <h2 class="text-nowrap text-4xl font-bold text-yellow sm:text-5xl">
@@ -45,11 +45,15 @@ const images = [
           <swiper
             :slides-per-view="1.2"
             :space-between="32"
-            class="z-20 mt-11 w-full max-w-[260px] sm:max-w-full"
+            class="z-20 mt-11 max-h-[720px] w-full max-w-[260px] sm:max-w-full"
             :centeredSlides="true"
           >
             <swiper-slide v-for="(image, index) in images" :key="index">
-              <img :src="image.img" alt="" class="w-full object-cover" />
+              <img
+                :src="image.img"
+                alt=""
+                class="max-h-[720px] w-full object-contain"
+              />
             </swiper-slide>
           </swiper>
         </div>
@@ -61,7 +65,7 @@ const images = [
         <img
           src="/public/cloud-big.webp"
           alt=""
-          class="absolute -bottom-36 -right-48 z-10 sm:-bottom-56"
+          class="absolute -bottom-36 -right-48 -z-20 sm:-bottom-56"
         />
       </div>
     </div>
