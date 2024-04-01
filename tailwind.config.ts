@@ -34,6 +34,8 @@ export default {
         darkBlue: "#002574",
         sky: "#D7ECFC",
         black: "#000000",
+        grey: "#7D7D7D",
+        greylight: "#CECECE",
       },
     },
     plugins: [],

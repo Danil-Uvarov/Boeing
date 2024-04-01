@@ -80,6 +80,7 @@
 :root,
 html {
     font-family: "Roboto", Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 * {

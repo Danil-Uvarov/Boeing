@@ -1,28 +1,27 @@
 <script setup lang="ts">
-import IconLogo from "assets/icons/IconLogo.vue";
 import BaseButton from "~/components/ui/BaseButton.vue";
 import MenuBurger from "~/components/ui/MenuBurger.vue";
 import { ref } from "vue";
 
 const links = [
   {
-    to: "",
+    to: "#Blow",
     name: "Home",
   },
   {
-    to: "",
+    to: "#About",
     name: "About $INVBOE",
   },
   {
-    to: "",
+    to: "#News",
     name: "News",
   },
   {
-    to: "",
+    to: "#How",
     name: "How To Buy",
   },
   {
-    to: "",
+    to: "#Tokenomics",
     name: "Tokenomics",
   },
   {
@@ -30,7 +29,7 @@ const links = [
     name: "Roadmap",
   },
   {
-    to: "",
+    to: "#Community",
     name: "Community",
   },
 ];
@@ -40,7 +39,7 @@ const open = ref(false);
 <template>
   <header class="fixed z-50 w-full bg-white">
     <div
-      class="container z-40 flex w-full items-center justify-center gap-[98px] py-[30px] sm:gap-[142px] lg:gap-[16px] 2xl:gap-[38px]"
+      class="container z-40 flex max-h-[72px] w-full items-center justify-center gap-[98px] py-[30px] sm:gap-[142px] lg:max-h-[95px] lg:gap-[16px] 2xl:gap-[38px]"
     >
       <img
         src="/boeing-logo.webp"

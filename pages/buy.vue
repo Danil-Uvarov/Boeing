@@ -3,6 +3,10 @@ import BaseButton from "~/components/ui/BaseButton.vue";
 import Arrow from "assets/icons/Arrow.vue";
 import IconEtherscan from "assets/icons/IconEtherscan.vue";
 import IconCoinMarketCap from "assets/icons/IconCoinMarketCap.vue";
+import { ref } from "vue";
+
+const inputCalculate = ref();
+const calculates = () => {};
 </script>
 
 <template>
@@ -13,16 +17,29 @@ import IconCoinMarketCap from "assets/icons/IconCoinMarketCap.vue";
       class="absolute inset-0 left-0 -z-10 h-full w-full object-cover"
     />
     <div class="container flex w-full flex-col items-center gap-10 py-20">
-      <h1 class="font-inter text-4xl font-bold text-white">
+      <h1
+        class="text-center font-inter text-4xl font-bold text-white md:text-3xl"
+      >
         BUY
         <mark class="text-yellow"> $INVBOE</mark>
         Pre-Sale Today!
       </h1>
-      <h2 class="font-inter text-2xl font-black text-white">Presale Address</h2>
-      <p class="font-inter text-lg font-bold text-yellow">
-        (..............................................Wallet
-        Adress..............................................)
-      </p>
+      <div class="flex flex-col gap-2">
+        <h2
+          class="text-center font-inter text-2xl font-black text-white md:text-lg"
+        >
+          Presale Address
+        </h2>
+        <p class="hidden font-inter text-lg font-bold text-yellow lg:block">
+          (..............................................Wallet
+          Adress..............................................)
+        </p>
+        <p
+          class="block text-nowrap font-inter text-lg font-bold text-yellow lg:hidden"
+        >
+          (..................Wallet Adress..................)
+        </p>
+      </div>
       <div class="font-inter text-xl font-bold">
         <p class="text-yellow">
           How to Bridge to Base and Buy Inverse Boeing (Pre-Sale)
@@ -49,7 +66,7 @@ import IconCoinMarketCap from "assets/icons/IconCoinMarketCap.vue";
         class="relative flex w-full max-w-[496px] flex-col items-center gap-6 px-4 pb-12 pt-6"
       >
         <div
-          class="absolute inset-0 top-0 rounded-2xl bg-white opacity-[25%]"
+          class="absolute inset-0 top-0 -z-10 rounded-2xl bg-white opacity-[25%]"
         />
         <BaseButton
           text="yellow"
@@ -59,8 +76,13 @@ import IconCoinMarketCap from "assets/icons/IconCoinMarketCap.vue";
         </BaseButton>
         <div class="flex w-full items-center rounded-2xl bg-white p-4">
           <div class="w-full">
-            <h4>You pay</h4>
-            <input placeholder="0" class="h h h-[43px] w-full" type="text" />
+            <h4 class="text-grey font-inter text-xs font-medium">You pay</h4>
+            <input
+              placeholder="0"
+              class="h-[43px] w-full outline-none"
+              type="text"
+              v-model="inputCalculate"
+            />
           </div>
           <BaseButton
             text="white"
@@ -73,18 +95,24 @@ import IconCoinMarketCap from "assets/icons/IconCoinMarketCap.vue";
         />
         <div class="flex w-full items-center rounded-2xl bg-white p-4">
           <div class="w-full">
-            <h4>You pay</h4>
-            <input placeholder="0" class="h h h-[43px] w-full" type="text" />
+            <h4 class="text-grey font-inter text-xs font-medium">
+              You receive
+            </h4>
+            <input
+              placeholder="0"
+              class="h-[43px] w-full outline-none"
+              type="text"
+            />
           </div>
           <BaseButton
             text="white"
             class="w-full max-w-[160px] border border-yellow bg-primary"
-            >BASE
+            >Inverse Boeing
           </BaseButton>
         </div>
       </div>
       <h3
-        class="max-w-[617px] text-center font-inter text-sm font-semibold text-white"
+        class="max-w-[617px] text-center font-inter text-sm font-semibold text-white md:text-[8px]"
       >
         <mark class="text-yellow">LEGAL DISCLAIMER:</mark> $INVBOE is a crypto
         coin with no intrinsic value or expectation of financial return. Just
@@ -94,10 +122,11 @@ import IconCoinMarketCap from "assets/icons/IconCoinMarketCap.vue";
       </h3>
       <div class="flex gap-10">
         <div class="flex gap-2.5">
-          <IconEtherscan class="bg-primary" /> <span>Etherscan</span>
+          <IconEtherscan class="bg-primary" />
+          <span class="text-white">Etherscan</span>
         </div>
         <div class="flex gap-2.5">
-          <IconCoinMarketCap /> <span>CoinMarketCap</span>
+          <IconCoinMarketCap /> <span class="text-white">CoinMarketCap</span>
         </div>
       </div>
     </div>
