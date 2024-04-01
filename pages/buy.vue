@@ -32,14 +32,8 @@ const calculates = () => {};
         >
           Presale Address
         </h2>
-        <p class="hidden font-inter text-lg font-bold text-yellow lg:block">
-          (..............................................Wallet
-          Adress..............................................)
-        </p>
-        <p
-          class="block text-nowrap font-inter text-lg font-bold text-yellow lg:hidden"
-        >
-          (..................Wallet Adress..................)
+        <p class="font-inter text-lg font-bold text-yellow">
+          0x9e8412f74d2d4cf01B650021922dFcC1Ab99dbad
         </p>
       </div>
       <div class="font-inter text-xl font-bold">
