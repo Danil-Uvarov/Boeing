@@ -4,6 +4,7 @@ import Arrow from "assets/icons/Arrow.vue";
 import IconEtherscan from "assets/icons/IconEtherscan.vue";
 import IconCoinMarketCap from "assets/icons/IconCoinMarketCap.vue";
 import { ref } from "vue";
+import BaseInput from "~/components/ui/BaseInput.vue";
 
 const inputCalculate = ref();
 const calculates = () => {};
@@ -12,6 +13,7 @@ const calculates = () => {};
 <template>
   <div class="relative">
     <img
+      loading="lazy"
       src="/background-skye.webp"
       alt=""
       class="absolute inset-0 left-0 -z-10 h-full w-full object-cover"
@@ -76,13 +78,8 @@ const calculates = () => {};
         </BaseButton>
         <div class="flex w-full items-center rounded-2xl bg-white p-4">
           <div class="w-full">
-            <h4 class="text-grey font-inter text-xs font-medium">You pay</h4>
-            <input
-              placeholder="0"
-              class="h-[43px] w-full outline-none"
-              type="text"
-              v-model="inputCalculate"
-            />
+            <h4 class="font-inter text-xs font-medium text-grey">You pay</h4>
+            <BaseInput />
           </div>
           <BaseButton
             text="white"
@@ -95,14 +92,10 @@ const calculates = () => {};
         />
         <div class="flex w-full items-center rounded-2xl bg-white p-4">
           <div class="w-full">
-            <h4 class="text-grey font-inter text-xs font-medium">
+            <h4 class="font-inter text-xs font-medium text-grey">
               You receive
             </h4>
-            <input
-              placeholder="0"
-              class="h-[43px] w-full outline-none"
-              type="text"
-            />
+            <BaseInput />
           </div>
           <BaseButton
             text="white"

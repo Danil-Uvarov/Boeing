@@ -26,48 +26,37 @@ const images = [
 
 <template>
   <section class="w-full">
-    <div class="">
-      <div class="relative">
-        <div class="relative flex flex-col items-center pb-12 pt-9 sm:mt-32">
-          <div
-            class="container absolute inset-x-0 top-0 -z-10 h-full w-full rounded-[28px] bg-darkBlue"
-          ></div>
-          <div class="px-[2rem] sm:pt-28">
-            <h2 class="text-nowrap text-4xl font-bold text-yellow sm:text-5xl">
-              The Vault
-            </h2>
-            <h2
-              class="pt-1 text-center text-[10px] text-white sm:pt-6 sm:text-lg"
-            >
-              Trade $INVBOE today
-            </h2>
-          </div>
-          <swiper
-            :slides-per-view="1.5"
-            :space-between="24"
-            class="z-20 mt-11 max-h-[720px] w-full sm:max-w-full"
-            :centeredSlides="true"
-          >
-            <swiper-slide v-for="(image, index) in images" :key="index">
-              <img
-                :src="image.img"
-                alt=""
-                class="max-h-[720px] object-contain"
-              />
-            </swiper-slide>
-          </swiper>
-        </div>
-        <img
-          src="/public/cloud-ballon.webp"
-          alt=""
-          class="absolute -left-28 top-52 -z-10 h-[102px] w-[223px]"
-        />
-        <img
-          src="/public/cloud-big.webp"
-          alt=""
-          class="absolute -bottom-36 -right-48 -z-20 sm:-bottom-56"
-        />
+    <div
+      class="relative mx-auto flex max-w-[1700px] flex-col items-center py-10 sm:mt-32"
+    >
+      <div
+        class="absolute inset-x-0 top-0 -z-10 mx-auto h-full w-full max-w-full bg-darkBlue xl:max-w-[1300px] xl:rounded-[28px]"
+      ></div>
+      <div class="px-[2rem] sm:pt-28">
+        <h2 class="text-nowrap text-5xl font-bold text-yellow">The Vault</h2>
+        <h2 class="pt-6 text-center text-lg text-white">Trade $INVBOE today</h2>
       </div>
+      <Swiper
+        :slides-per-view="1.5"
+        :space-between="24"
+        class="container z-20 mt-10 max-h-[720px] w-full sm:max-w-full"
+        :centeredSlides="true"
+      >
+        <SwiperSlide v-for="(image, index) in images" :key="index">
+          <img
+            loading="lazy"
+            :src="image.img"
+            alt=""
+            class="max-h-[620px] max-w-full object-contain"
+          />
+        </SwiperSlide>
+      </Swiper>
     </div>
+    <img
+      loading="lazy"
+      src="/public/cloud-ballon.webp"
+      alt=""
+      class="absolute -left-28 top-52 -z-10 h-[102px] w-[223px]"
+    />
   </section>
 </template>

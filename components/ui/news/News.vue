@@ -7,32 +7,17 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 
 const modules = [Pagination];
 
-const news = [
-  {
-    imgNews: "/Image-boeing-news-FBI.webp",
-    srcIcon: "/hieroglyph.webp",
-    title:
-      "F.B.I. Tells Passengers on Alaska Flight They May Have Been Crime Victims",
-    subtitle:
-      "Letters sent by the bureau’s Seattle office are a sign that the Justice Department’s investigation into Boeing, the maker of the plane whose fuselage panel blew off, is ramping up.",
-  },
-  {
-    imgNews: "/Image-boeing-news-FBI.webp",
-    srcIcon: "/hieroglyph.webp",
-    title:
-      "F.B.I. Tells Passengers on Alaska Flight They May Have Been Crime Victims",
-    subtitle:
-      "Letters sent by the bureau’s Seattle office are a sign that the Justice Department’s investigation into Boeing, the maker of the plane whose fuselage panel blew off, is ramping up.",
-  },
-  {
-    imgNews: "/Image-boeing-news-FBI.webp",
-    srcIcon: "/hieroglyph.webp",
-    title:
-      "F.B.I. Tells Passengers on Alaska Flight They May Have Been Crime Victims",
-    subtitle:
-      "Letters sent by the bureau’s Seattle office are a sign that the Justice Department’s investigation into Boeing, the maker of the plane whose fuselage panel blew off, is ramping up.",
-  },
-];
+defineProps<{
+  news: [
+    {
+      imgNews: string;
+      srcIcon: string;
+      title: string;
+      subtitle: string;
+      href: string;
+    },
+  ];
+}>();
 </script>
 
 <template>

@@ -23,6 +23,7 @@ import BaseButton from "~/components/ui/BaseButton.vue";
           </p>
         </div>
         <img
+          loading="lazy"
           src="/public/tokenomics-boeing.webp"
           alt=""
           class="md:bottom-18 h-full w-full scale-x-110 object-contain md:absolute md:-left-32 md:max-h-[94px] md:max-w-[240px]"

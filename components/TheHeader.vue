@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import BaseButton from "~/components/ui/BaseButton.vue";
+import ButtonBurger from "~/components/ui/ButtonBurger.vue";
+import { computed, ref } from "vue";
 import MenuBurger from "~/components/ui/MenuBurger.vue";
-import { ref } from "vue";
 
 const links = [
   {
@@ -33,19 +34,26 @@ const links = [
     name: "Community",
   },
 ];
-const open = ref(false);
+defineEmits(["openBurger"]);
+
+const burger = ref(false);
 </script>
 
 <template>
-  <header class="fixed z-50 w-full bg-white">
+  <header
+    class="fixed z-50 max-h-[40px] w-full bg-white sm:max-h-[72px] lg:max-h-[95px]"
+  >
     <div
-      class="container z-40 flex max-h-[72px] w-full items-center justify-center gap-[98px] py-[30px] sm:gap-[142px] lg:max-h-[95px] lg:gap-[16px] 2xl:gap-[38px]"
+      class="container z-40 flex max-h-[40px] w-full items-center justify-center gap-[98px] py-[10px] sm:max-h-[72px] sm:gap-[142px] sm:py-[30px] lg:max-h-[95px] lg:gap-[16px] 2xl:gap-[38px]"
     >
-      <img
-        src="/boeing-logo.webp"
-        alt=""
-        class="h-full w-full max-w-[138px] object-contain lg:max-w-[118px] 2xl:max-h-[42px] 2xl:max-w-[178px]"
-      />
+      <NuxtLink to="#Blow">
+        <img
+          loading="lazy"
+          src="/boeing-logo.webp"
+          alt=""
+          class="h-full w-full max-w-[138px] cursor-pointer object-contain lg:max-w-[118px] 2xl:max-h-[42px] 2xl:max-w-[178px]"
+        />
+      </NuxtLink>
       <nav class="hidden w-full lg:flex">
         <ul class="flex w-full items-center">
           <li
@@ -58,27 +66,18 @@ const open = ref(false);
         </ul>
       </nav>
       <div class="flex items-center gap-8">
-        <BaseButton
-          text="primary"
-          bg="yellow"
-          class="max-h-7 text-nowrap px-3.5 sm:px-6 sm:py-1.5"
-        >
-          Buy Now
-        </BaseButton>
-        <MenuBurger class="lg:hidden" @click="open = !open" />
+        <NuxtLink to="/buy">
+          <BaseButton
+            text="primary"
+            bg="yellow"
+            class="max-h-7 text-nowrap px-3.5 sm:px-6 sm:py-1.5"
+          >
+            Buy Now
+          </BaseButton>
+        </NuxtLink>
+        <ButtonBurger class="lg:hidden" @click="burger = !burger" />
+        <MenuBurger v-if="burger" v-model="burger" :links="links" />
       </div>
-      <ul
-        class="absolute inset-x-0 top-[100%] w-full rounded-b-2xl bg-white pb-6"
-        v-if="open"
-      >
-        <li
-          v-for="(link, index) in links"
-          :key="index"
-          class="px-4 py-3 font-inter font-semibold"
-        >
-          <NuxtLink :to="link.to">{{ link.name }}</NuxtLink>
-        </li>
-      </ul>
     </div>
   </header>
 </template>

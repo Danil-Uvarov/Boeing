@@ -6,6 +6,7 @@ import BaseButton from "~/components/ui/BaseButton.vue";
 <template>
   <section class="relative z-10 w-full sm:pt-28">
     <img
+      loading="lazy"
       src="/public/background-skye.webp"
       alt=""
       class="absolute inset-0 z-20 h-full w-full object-cover"
@@ -14,7 +15,7 @@ import BaseButton from "~/components/ui/BaseButton.vue";
       class="container relative z-30 flex w-full flex-col items-center pb-28 lg:flex-row lg:gap-20"
     >
       <div
-        class="mt-10 flex flex-col rounded-[28px] bg-sky px-[2rem] py-4 sm:mt-0 sm:max-w-[980px] sm:items-start sm:p-4 xl:py-[30px]"
+        class="z-30 mt-10 flex flex-col rounded-[28px] bg-sky px-[2rem] py-4 sm:mt-0 sm:max-w-[980px] sm:items-start sm:p-4 xl:py-[30px]"
       >
         <h2
           class="text-2xl font-bold text-primary sm:text-start sm:text-[56px]"
@@ -55,12 +56,14 @@ import BaseButton from "~/components/ui/BaseButton.vue";
           we truly crafted something that is set to only take off. The sky is
           the limit see you up there with he stars!
         </p>
-        <BaseButton
-          text="primary"
-          class="mt-7 max-w-[145px] text-nowrap text-xs font-bold sm:max-w-[219px]"
-          bg="yellow"
-          >MORE ABOUT $INVBOE
-        </BaseButton>
+        <NuxtLink to="/buy" class="z-30 w-full">
+          <BaseButton
+            text="primary"
+            class="z-30 mt-7 w-full max-w-[191px] text-nowrap font-bold lg:max-w-[219px]"
+            bg="yellow"
+            >MORE ABOUT $INVBOE
+          </BaseButton>
+        </NuxtLink>
       </div>
       <img
         src="/public/wtf-airplane.webp"

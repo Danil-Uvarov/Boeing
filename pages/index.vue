@@ -18,13 +18,13 @@ import WorkingSection from "~/components/WorkingSection.vue";
 <template>
   <div class="flex w-full flex-col items-center overflow-x-hidden">
     <TheHeader />
-    <BlowDoorsSection id="Blow" />
-    <YellowLogoStrip />
+    <BlowDoorsSection id="Blow" class="-scroll-mt-10" />
+    <YellowLogoStrip class="scroll-mt-20" />
     <WTFBoeing id="About" />
-    <BoeingNews id="News" />
-    <InvboeSection id="How" />
+    <BoeingNews id="News" class="scroll-mt-20" />
+    <InvboeSection id="How" class="scroll-mt-20" />
     <VaultSection />
-    <CommunitySection id="Community" />
+    <CommunitySection id="Community" class="scroll-mt-20" />
     <TokenomicSection id="Tokenomics" />
     <PercentsSection />
     <ExcitingLifeSection />

@@ -11,6 +11,7 @@ import IconFouLanes from "assets/icons/IconFouLanes.vue";
       class="ms:max-h-[52px] hidden h-full max-h-[31px] w-full max-w-[33px] sm:block"
     />
     <img
+      loading="lazy"
       src="/boeing-logo.webp"
       alt=""
       class="ms:max-h-[52px] hidden h-full max-h-[31px] w-full max-w-[178px] sm:block"
@@ -19,6 +20,7 @@ import IconFouLanes from "assets/icons/IconFouLanes.vue";
       class="ms:max-h-[52px] h-full max-h-[31px] w-full max-w-[33px]"
     />
     <img
+      loading="lazy"
       src="/boeing-logo.webp"
       alt=""
       class="ms:max-h-[52px] h-full max-h-[31px] w-full max-w-[178px]"

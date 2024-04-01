@@ -79,11 +79,11 @@
 
 :root,
 html {
+    overflow-x: hidden;
     font-family: "Roboto", Arial, sans-serif;
     scroll-behavior: smooth;
 }
 
 * {
     background: none;
-
 }

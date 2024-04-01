@@ -18,7 +18,7 @@ import BaseButton from "~/components/ui/BaseButton.vue";
           we trust.
         </h3>
         <h3
-          class="font-inter text-[32px] text-xl font-light font-medium text-blue sm:inline sm:text-[32px]"
+          class="font-inter text-[32px] text-xl font-medium text-blue sm:inline sm:text-[32px]"
         >
           Not
           <mark class="font-boeing font-black text-blue">BOEING</mark>
@@ -32,19 +32,23 @@ import BaseButton from "~/components/ui/BaseButton.vue";
           flags while Boeing can’t raise the red. Inverse Boeing is here to
           stay.
         </p>
-        <BaseButton
-          text="primary"
-          bg="yellow"
-          class="mt-4 max-w-[145px] py-1 md:mt-6"
-          >Enter Presale</BaseButton
+        <NuxtLink to="/buy">
+          <BaseButton
+            text="primary"
+            bg="yellow"
+            class="mt-4 max-w-[145px] py-1 md:mt-6"
+            >Enter Presale</BaseButton
+          ></NuxtLink
         >
       </div>
       <img
+        loading="lazy"
         src="~/public/invboe.webp"
         class="mt-24 h-full max-h-[104px] w-full max-w-[304px] object-contain lg:max-h-[315px] lg:max-w-[918px]"
         alt=""
       />
       <img
+        loading="lazy"
         src="../public/cloud-big.webp"
         alt=""
         class="absolute bottom-14 right-12 max-h-[141px] max-w-[2014px] sm:bottom-72 lg:-right-44 lg:bottom-5 lg:max-h-[426px] lg:max-w-[646px]"

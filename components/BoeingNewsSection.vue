@@ -36,26 +36,33 @@ const news = [
 <template>
   <section class="container relative z-20 w-full">
     <div
-      class="-mt-7 flex flex-col items-center rounded-[28px] bg-darkBlue px-[2rem] pb-12 pt-14 pt-9 xl:pt-20"
+      class="-mt-7 flex flex-col items-center rounded-[28px] bg-darkBlue px-[2rem] pb-12 pt-14 xl:pt-20"
     >
       <img
+        loading="lazy"
         src="/public/cloud-big.webp"
         alt=""
-        class="absolute -left-48 -top-40 z-10 h-full max-h-[213px] sm:-left-32 sm:-top-28 sm:max-w-[323px] xl:-left-32 xl:-top-52 xl:max-h-[426px] xl:max-w-[600px]"
+        class="absolute -left-48 -top-40 z-10 h-full max-h-[213px] sm:-left-32 sm:-top-28 sm:max-w-[323px] xl:-left-32 xl:-top-36 xl:max-h-[326px] xl:max-w-[600px]"
       />
       <h2 class="text-nowrap text-4xl font-bold text-yellow md:text-5xl">
         Boeing News
       </h2>
-      <News class="sm:hidden" />
+      <News class="sm:hidden" :news="news" />
       <div class="hidden grid-cols-3 gap-5 pt-12 sm:grid xl:pt-20">
         <article
           class="flex flex-col"
           v-for="(item, index) in news"
           :key="index"
         >
-          <img :src="item.imgNews" alt="" class="h-full max-h-[160px] w-full" />
+          <img
+            loading="lazy"
+            :src="item.imgNews"
+            alt=""
+            class="h-full max-h-[160px] w-full"
+          />
           <div class="h-full bg-white p-3">
             <img
+              loading="lazy"
               :src="item.srcIcon"
               alt=""
               class="h-full max-h-[10px] w-full max-w-[75px] object-contain sm:max-h-[26px] sm:max-w-[177px]"
@@ -74,6 +81,7 @@ const news = [
       </div>
     </div>
     <img
+      loading="lazy"
       src="/public/cloud-ballon.webp"
       alt=""
       class="absolute -left-[120px] bottom-0 -z-10 hidden h-[205px] w-[311px] sm:block"
