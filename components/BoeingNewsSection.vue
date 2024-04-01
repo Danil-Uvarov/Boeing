@@ -36,11 +36,18 @@ const news = [
 <template>
   <section class="container relative z-20 w-full">
     <div
-      class="-mt-7 flex flex-col items-center rounded-[28px] bg-darkBlue px-[2rem] pb-12 pt-9"
+      class="-mt-7 flex flex-col items-center rounded-[28px] bg-darkBlue px-[2rem] pb-12 pt-14 pt-9 xl:pt-20"
     >
-      <h2 class="text-nowrap text-4xl font-bold text-yellow">Boeing News</h2>
+      <img
+        src="/public/cloud-big.webp"
+        alt=""
+        class="absolute -left-48 -top-40 z-10 h-full max-h-[213px] sm:-left-32 sm:-top-28 sm:max-w-[323px] xl:-left-32 xl:-top-52 xl:max-h-[426px] xl:max-w-[600px]"
+      />
+      <h2 class="text-nowrap text-4xl font-bold text-yellow md:text-5xl">
+        Boeing News
+      </h2>
       <News class="sm:hidden" />
-      <div class="hidden grid-cols-3 gap-5 sm:grid">
+      <div class="hidden grid-cols-3 gap-5 pt-12 sm:grid xl:pt-20">
         <article
           class="flex flex-col"
           v-for="(item, index) in news"
@@ -67,9 +74,9 @@ const news = [
       </div>
     </div>
     <img
-      src="/public/cloud-big.webp"
+      src="/public/cloud-ballon.webp"
       alt=""
-      class="absolute -left-[160px] bottom-0 -z-10 h-[205px] w-[311px]"
+      class="absolute -left-[120px] bottom-0 -z-10 hidden h-[205px] w-[311px] sm:block"
     />
   </section>
 </template>

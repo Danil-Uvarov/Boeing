@@ -3,10 +3,10 @@ import BaseButton from "~/components/ui/BaseButton.vue";
 </script>
 
 <template>
-  <section class="h-full w-full bg-blue">
-    <div class="container relative">
-      <div class="flex flex-col items-center pb-12 pt-9">
-        <h2 class="font-boeing z-20 text-5xl text-yellow sm:text-8xl">
+  <section class="-mt-1 h-full w-full bg-blue">
+    <div class="container relative z-30">
+      <div class="z-30 flex flex-col items-center pb-12 pt-10 lg:pt-14">
+        <h2 class="z-20 font-boeing text-5xl text-yellow sm:text-8xl">
           $INVBOE
         </h2>
         <h3
@@ -37,19 +37,24 @@ import BaseButton from "~/components/ui/BaseButton.vue";
             >Twitter
           </BaseButton>
         </div>
-        <h2 class="font-boeing pt-14 text-5xl text-yellow sm:text-8xl">
+        <h2 class="pt-14 font-boeing text-5xl text-yellow sm:text-8xl">
           $INVBOE
         </h2>
       </div>
       <img
         src="/public/cloud-big.webp"
         alt=""
-        class="absolute -right-72 -top-12 z-10 -scale-x-100"
+        class="absolute -right-48 -top-12 z-10 hidden -scale-x-100 lg:block"
       />
       <img
         src="/public/cloud-big.webp"
         alt=""
-        class="absolute -bottom-0 -left-60 z-10"
+        class="absolute -bottom-0 -right-96 z-10 hidden lg:block"
+      />
+      <img
+        src="/public/cloud-big.webp"
+        alt=""
+        class="absolute -left-60 -top-20 z-10 hidden lg:block"
       />
     </div>
   </section>

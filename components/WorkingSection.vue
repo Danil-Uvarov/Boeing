@@ -1,9 +1,9 @@
 <script lang="ts" setup></script>
 <template>
-  <section class="relative h-full w-full py-7">
+  <section class="relative h-full w-full py-7 lg:pb-8 lg:pt-36">
     <div class="container flex h-full w-full flex-col items-center">
       <div class="w-full max-w-[880px]">
-        <h2 class="text-center text-4xl font-bold sm:text-5xl">
+        <h2 class="text-center text-4xl font-bold lg:text-5xl">
           Working with Industry Leaders to Donate Towards Safety
         </h2>
         <h3 class="pt-6 text-center text-base font-medium sm:text-lg">
@@ -13,27 +13,27 @@
         </h3>
       </div>
       <div
-        class="flex h-full w-full flex-wrap items-center justify-center sm:gap-12"
+        class="flex h-full w-full flex-wrap items-center justify-center gap-12 pt-12"
       >
         <img
           src="/flight-working.webp "
-          class="h-full w-full max-w-[300px] object-cover"
+          class="h-full w-full max-w-[300px] object-cover lg:max-h-[60px] lg:max-w-[150px]"
           alt=""
         />
         <img
           src="/aviation-working.webp "
-          class="h-full w-full max-w-[300px] object-cover"
+          class="h-full w-full max-w-[300px] object-cover lg:max-h-[60px] lg:max-w-[132px]"
           alt=""
         />
         <img
           src="/aopa-working.webp "
-          class="h-full w-full max-w-[300px] object-cover"
+          class="max-h-[60px]max-w-[112px] object-cover lg:w-full lg:max-w-[300px]"
           alt=""
         />
       </div>
     </div>
     <img
-      class="absolute inset-0 -z-10 h-full w-full"
+      class="absolute inset-0 -z-10 h-full w-full object-cover"
       src="/background-working.webp"
       alt=""
     />

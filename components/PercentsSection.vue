@@ -47,17 +47,17 @@ const percents = [
 
 <template>
   <section
-    class="container flex flex-col items-center gap-[39px] pt-9 sm:gap-[54px]"
+    class="container flex flex-col items-center gap-[39px] pt-9 lg:pt-20"
   >
-    <div class="flex flex-wrap items-center justify-center gap-9">
+    <div class="flex flex-wrap items-center justify-center gap-9 lg:gap-[72px]">
       <ul v-for="(percent, index) in percents" :key="index">
-        <li class="flex flex-col items-center gap-2 text-center">
+        <li class="flex flex-col items-center justify-center gap-2 text-center">
           <h3
-            class="font-kanit bg-[url('/public/background-skye.webp')] bg-contain bg-clip-text text-5xl font-bold text-transparent sm:text-[100px]"
+            class="bg-[url('/public/background-skye.webp')] bg-contain bg-clip-text font-kanit text-[50px] font-bold text-transparent lg:text-[100px]"
           >
             {{ percent.percent }}%
           </h3>
-          <h3 class="font-kanit font-bold sm:text-4xl">
+          <h3 class="font-kanit font-bold lg:text-4xl">
             {{ percent.subtitle }}
           </h3>
         </li>

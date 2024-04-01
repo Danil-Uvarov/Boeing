@@ -26,10 +26,10 @@ import WorkingSection from "~/components/WorkingSection.vue";
     <VaultSection />
     <CommunitySection id="Community" />
     <TokenomicSection id="Tokenomics" />
-    <PercentsSection id="About" />
-    <ExcitingLifeSection id="About" />
-    <WorkingSection id="About" />
-    <InvitationSection id="About" />
+    <PercentsSection />
+    <ExcitingLifeSection />
+    <WorkingSection />
+    <InvitationSection />
     <TheFooter />
   </div>
 </template>

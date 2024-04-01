@@ -6,14 +6,14 @@ import BaseButton from "~/components/ui/BaseButton.vue";
   <section class="relative">
     <div class="container w-full pt-20">
       <div
-        class="flex flex-col items-center rounded-[28px] bg-blue pb-12 pt-9 sm:flex-row sm:items-start sm:gap-[56px]"
+        class="flex flex-col items-center rounded-[28px] bg-blue pb-12 pt-9 md:flex-row md:items-start md:gap-[56px]"
       >
-        <div class="px-[2rem] sm:max-w-[302px]">
-          <h2 class="text-center text-4xl font-bold text-white sm:text-start">
+        <div class="px-[2rem] md:max-w-[302px]">
+          <h2 class="text-center text-4xl font-bold text-white md:text-start">
             Tokenomics
           </h2>
           <p
-            class="pt-3 text-center font-inter text-xs text-white sm:text-start sm:text-base"
+            class="pt-3 text-center font-inter text-xs text-white md:text-start md:text-base"
           >
             Understanding
             <mark class="font-extrabold text-white"> Inverse Boeing</mark>
@@ -25,13 +25,13 @@ import BaseButton from "~/components/ui/BaseButton.vue";
         <img
           src="/public/tokenomics-boeing.webp"
           alt=""
-          class="sm:bottom-18 h-full w-full scale-x-110 object-contain sm:absolute sm:-left-32 sm:max-h-[94px] sm:max-w-[240px]"
+          class="md:bottom-18 h-full w-full scale-x-110 object-contain md:absolute md:-left-32 md:max-h-[94px] md:max-w-[240px]"
         />
         <div
-          class="flex flex-col items-center px-[2rem] sm:max-w-[488px] sm:items-start"
+          class="flex flex-col items-center px-[2rem] md:max-w-[488px] md:items-start"
         >
           <p
-            class="pt-6 text-center font-inter text-xs text-white sm:pt-0 sm:text-start sm:text-lg"
+            class="pt-6 text-center font-inter text-xs text-white md:pt-0 md:text-start md:text-lg"
           >
             <mark class="font-extrabold text-white">Inverse Boeing</mark>
             operates on Base and is made for the community to interact with. Our
@@ -52,15 +52,5 @@ import BaseButton from "~/components/ui/BaseButton.vue";
         </div>
       </div>
     </div>
-    <img
-      src="/public/cloud-big.webp"
-      class="absolute -right-[200px] -top-[80px] sm:hidden"
-      alt=""
-    />
-    <img
-      src="/public/cloud-big.webp"
-      class="absolute -bottom-[50px] -left-[260px] sm:hidden"
-      alt=""
-    />
   </section>
 </template>
