@@ -17,6 +17,7 @@ const props = defineProps<{
     | "telegramBlue"
     | "twitterBlue";
   iconPosition?: "right" | "left";
+  to?: string;
 }>();
 
 const textColor = shallowRef(props.text ?? "primary");
@@ -33,7 +34,8 @@ const currentIcon = computed(() => icons[props.nameIcon]);
 </script>
 
 <template>
-  <button
+  <NuxtLink
+    :to="to"
     class="flex h-full max-h-[48px] w-full items-center justify-center gap-1 rounded-[30px] py-1.5 text-[10px] font-bold sm:text-base md:rounded-[40px]"
     :class="{
       'text-primary': textColor === 'primary',
@@ -56,7 +58,7 @@ const currentIcon = computed(() => icons[props.nameIcon]);
       :is="currentIcon"
       class="h-3 w-3.5"
     />
-  </button>
+  </NuxtLink>
 </template>
 
 <style scoped></style>

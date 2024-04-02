@@ -55,14 +55,13 @@ import BaseButton from "~/components/ui/BaseButton.vue";
           />
         </li>
       </ul>
-      <NuxtLink to="/buy" class="w-full">
-        <BaseButton
-          text="primary"
-          bg="yellow"
-          class="mx-auto mt-10 max-w-[88px] sm:mt-12 sm:max-w-[130px]"
-          >Trade Now!</BaseButton
-        >
-      </NuxtLink>
+      <BaseButton
+        to="/buy"
+        text="primary"
+        bg="yellow"
+        class="mx-auto mt-10 max-w-[88px] sm:mt-12 sm:max-w-[130px]"
+        >Trade Now!</BaseButton
+      >
     </div>
   </section>
 </template>

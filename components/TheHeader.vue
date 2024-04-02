@@ -67,15 +67,14 @@ const burger = ref(false);
         </ul>
       </nav>
       <div class="flex items-center gap-8">
-        <NuxtLink to="/buy">
-          <BaseButton
-            text="primary"
-            bg="yellow"
-            class="max-h-7 text-nowrap px-3.5 sm:px-6 sm:py-1.5"
-          >
-            Buy Now
-          </BaseButton>
-        </NuxtLink>
+        <BaseButton
+          to="/buy"
+          text="primary"
+          bg="yellow"
+          class="max-h-7 text-nowrap px-3.5 sm:px-6 sm:py-1.5"
+        >
+          Buy Now
+        </BaseButton>
         <ButtonBurger class="lg:hidden" @click="burger = !burger" />
         <MenuBurger v-if="burger" v-model="burger" :links="links" />
       </div>

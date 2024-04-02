@@ -63,7 +63,7 @@ const percents = [
         </li>
       </ul>
     </div>
-    <BaseButton text="primary" bg="yellow" class="max-w-[131px]"
+    <BaseButton to="/buy" text="primary" bg="yellow" class="max-w-[131px]"
       >Learn More
     </BaseButton>
   </section>

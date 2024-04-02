@@ -32,13 +32,12 @@ import BaseButton from "~/components/ui/BaseButton.vue";
           flags while Boeing can’t raise the red. Inverse Boeing is here to
           stay.
         </p>
-        <NuxtLink to="/buy">
-          <BaseButton
-            text="primary"
-            bg="yellow"
-            class="mt-4 max-w-[145px] py-1 md:mt-6"
-            >Enter Presale</BaseButton
-          ></NuxtLink
+        <BaseButton
+          to="/buy"
+          text="primary"
+          bg="yellow"
+          class="mt-4 max-w-[145px] py-1 md:mt-6"
+          >Enter Presale</BaseButton
         >
       </div>
       <img

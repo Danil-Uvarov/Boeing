@@ -43,6 +43,7 @@ import BaseButton from "~/components/ui/BaseButton.vue";
             <mark class="font-extrabold text-white">INVERSE BOEING.</mark>
           </p>
           <BaseButton
+            to="/buy"
             text="white"
             icon-position="right"
             name-icon="learnMore"

@@ -27,36 +27,33 @@ import BaseButton from "~/components/ui/BaseButton.vue";
           just have to remember one thing $INVBOE to Mars.
         </p>
         <div class="flex w-full flex-wrap gap-4 pt-5">
-          <NuxtLink to="/buy">
-            <BaseButton
-              class="max-w-[111px] px-3.5 py-3 lg:max-w-[99px]"
-              text="primary"
-              bg="white"
-              >TRADE</BaseButton
-            >
-          </NuxtLink>
-          <NuxtLink to="https://t.me/inverseboeing">
-            <BaseButton
-              class="max max-w-[148px] px-6 py-3"
-              text="white"
-              bg="none"
-              border
-              name-icon="telegram"
-              icon-position="left"
-              >Telegram
-            </BaseButton>
-          </NuxtLink>
-          <NuxtLink to="https://twitter.com/inverseboeing">
-            <BaseButton
-              class="max-w-[148px] px-6 py-3"
-              text="white"
-              bg="none"
-              border
-              name-icon="twitter"
-              icon-position="left"
-              >Twitter
-            </BaseButton>
-          </NuxtLink>
+          <BaseButton
+            to="/buy"
+            class="max-w-[111px] px-3.5 py-3 lg:max-w-[99px]"
+            text="primary"
+            bg="white"
+            >TRADE</BaseButton
+          >
+          <BaseButton
+            to="https://t.me/inverseboeing"
+            class="max max-w-[148px] px-6 py-3"
+            text="white"
+            bg="none"
+            border
+            name-icon="telegram"
+            icon-position="left"
+            >Telegram
+          </BaseButton>
+          <BaseButton
+            to="https://twitter.com/inverseboeing"
+            class="max-w-[148px] px-6 py-3"
+            text="white"
+            bg="none"
+            border
+            name-icon="twitter"
+            icon-position="left"
+            >Twitter
+          </BaseButton>
         </div>
       </div>
     </div>

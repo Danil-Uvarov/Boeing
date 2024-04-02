@@ -55,14 +55,13 @@ import BaseButton from "~/components/ui/BaseButton.vue";
           we truly crafted something that is set to only take off. The sky is
           the limit see you up there with he stars!
         </p>
-        <NuxtLink to="/buy" class="z-30 w-full">
-          <BaseButton
-            text="primary"
-            class="z-30 mt-7 w-full max-w-[191px] text-nowrap font-bold lg:max-w-[219px]"
-            bg="yellow"
-            >MORE ABOUT $INVBOE
-          </BaseButton>
-        </NuxtLink>
+        <BaseButton
+          to="/buy"
+          text="primary"
+          class="z-30 mt-7 w-full max-w-[191px] text-nowrap font-bold lg:max-w-[219px]"
+          bg="yellow"
+          >MORE ABOUT $INVBOE
+        </BaseButton>
       </div>
       <img
         src="/public/wtf-airplane.webp"

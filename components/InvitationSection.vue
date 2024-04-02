@@ -19,27 +19,25 @@ import BaseButton from "~/components/ui/BaseButton.vue";
         <div
           class="z-20 flex items-center justify-center gap-1.5 pt-3.5 sm:pt-7"
         >
-          <NuxtLink to="https://t.me/inverseboeing">
-            <BaseButton
-              text="primary"
-              bg="yellow"
-              icon-position="left"
-              name-icon="telegramBlue"
-              class="px-[18px] lg:px-12 lg:py-3"
-            >
-              Telegram
-            </BaseButton>
-          </NuxtLink>
-          <NuxtLink to="https://twitter.com/inverseboeing">
-            <BaseButton
-              text="primary"
-              bg="yellow"
-              icon-position="left"
-              name-icon="twitterBlue"
-              class="py- px-[18px] lg:px-12 lg:py-3"
-              >Twitter
-            </BaseButton>
-          </NuxtLink>
+          <BaseButton
+            to="https://t.me/inverseboeing"
+            text="primary"
+            bg="yellow"
+            icon-position="left"
+            name-icon="telegramBlue"
+            class="px-[18px] lg:px-12 lg:py-3"
+          >
+            Telegram
+          </BaseButton>
+          <BaseButton
+            to="https://twitter.com/inverseboeing"
+            text="primary"
+            bg="yellow"
+            icon-position="left"
+            name-icon="twitterBlue"
+            class="py- px-[18px] lg:px-12 lg:py-3"
+            >Twitter
+          </BaseButton>
         </div>
         <h2 class="pt-14 font-boeing text-5xl text-yellow lg:text-8xl">
           $INVBOE
