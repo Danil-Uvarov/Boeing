@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import BoeingTitle from "assets/icons/BoeingTitle.vue";
 import BaseButton from "~/components/ui/BaseButton.vue";
 </script>
 

@@ -1,47 +1,1 @@
-<script setup lang="ts">
-import NewLink from "assets/icons/NewLink.vue";
-import { Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/vue";
-
-const modules = [Pagination];
-
-defineProps<{
-  news: [
-    {
-      imgNews: string;
-      srcIcon: string;
-      title: string;
-      subtitle: string;
-      href: string;
-    },
-  ];
-}>();
-</script>
-
-<template>
-  <article>
-    <Swiper
-      class="relative mt-6 w-[175px] rounded-md"
-      :pagination="{ dynamicBullets: true }"
-      :modules="modules"
-      :slides-per-view="1"
-      :space-between="50"
-    >
-      <SwiperSlide
-        v-for="(item, index) in news"
-        :key="index"
-        :virtualIndex="index"
-      >
-        <img :src="item.imgNews" alt="" />
-        <div class="bg-white p-3">
-          <img :src="item.srcIcon" alt="" class="h-[10px] w-[75px]" />
-          <h3 class="pt-1 text-[10px] font-bold">{{ item.title }}</h3>
-          <p class="text-[8px]">{{ item.subtitle }}</p>
-          <a class="flex justify-end">
-            <NewLink class="h-2 w-2" />
-          </a>
-        </div>
-      </SwiperSlide>
-    </Swiper>
-  </article>
-</template>
+<script setup lang="ts">import NewLink from "~/components/icons/NewLink.vue";import { Pagination } from "swiper/modules";import { Swiper, SwiperSlide } from "swiper/vue";const modules = [Pagination];defineProps<{  news: [    {      imgNews: string;      srcIcon: string;      title: string;      subtitle: string;      href: string;    },  ];}>();</script><template>  <article>    <Swiper      class="relative mt-6 w-[175px] rounded-md"      :pagination="{ dynamicBullets: true }"      :modules="modules"      :slides-per-view="1"      :space-between="50"    >      <SwiperSlide        v-for="(item, index) in news"        :key="index"        :virtualIndex="index"      >        <img :src="item.imgNews" alt="" />        <div class="bg-white p-3">          <img :src="item.srcIcon" alt="" class="h-[10px] w-[75px]" />          <h3 class="pt-1 text-[10px] font-bold">{{ item.title }}</h3>          <p class="text-[8px]">{{ item.subtitle }}</p>          <a class="flex justify-end">            <NewLink class="h-2 w-2" />          </a>        </div>      </SwiperSlide>    </Swiper>  </article></template>

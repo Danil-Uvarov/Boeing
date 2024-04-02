@@ -13,6 +13,7 @@ import ExcitingLifeSection from "~/components/ExcitingLifeSection.vue";
 import InvitationSection from "~/components/InvitationSection.vue";
 import TheFooter from "~/components/TheFooter.vue";
 import WorkingSection from "~/components/WorkingSection.vue";
+import RoadmapSection from "~/components/RoadmapSection.vue";
 </script>
 
 <template>
@@ -24,6 +25,7 @@ import WorkingSection from "~/components/WorkingSection.vue";
     <BoeingNews id="News" class="scroll-mt-20" />
     <InvboeSection id="How" class="scroll-mt-20" />
     <VaultSection />
+    <RoadmapSection id="Roadmap" />
     <CommunitySection id="Community" class="scroll-mt-20" />
     <TokenomicSection id="Tokenomics" />
     <PercentsSection />

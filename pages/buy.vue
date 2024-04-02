@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import BaseButton from "~/components/ui/BaseButton.vue";
-import Arrow from "assets/icons/Arrow.vue";
-import IconEtherscan from "assets/icons/IconEtherscan.vue";
-import IconCoinMarketCap from "assets/icons/IconCoinMarketCap.vue";
+import Arrow from "~/components/icons/Arrow.vue";
+import IconEtherscan from "~/components/icons/IconEtherscan.vue";
+import IconCoinMarketCap from "~/components/icons/IconCoinMarketCap.vue";
 import { ref } from "vue";
 import BaseInput from "~/components/ui/BaseInput.vue";
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import News from "~/components/ui/news/News.vue";
-import NewLink from "assets/icons/NewLink.vue";
+import NewLink from "~/components/icons/NewLink.vue";
 
 const news = [
   {

@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { computed, shallowRef } from "vue";
-import IconTelegram from "~/assets/icons/IconTelegram.vue";
-import IconTwitter from "~/assets/icons/IconTwitter.vue";
-import learnMore from "assets/icons/IconLearnMore.vue";
-import TelegramBlue from "assets/icons/IconTelegramBlue.vue";
-import TwitterBlue from "assets/icons/IconTwitterBlue.vue";
+import IconTelegram from "~/components/icons/IconTelegram.vue";
+import IconTwitter from "~/components/icons/IconTwitter.vue";
+import learnMore from "~/components/icons/IconLearnMore.vue";
+import TelegramBlue from "~/components/icons/IconTelegramBlue.vue";
+import TwitterBlue from "~/components/icons/IconTwitterBlue.vue";
 
 const props = defineProps<{
   text: "yellow" | "white" | "primary";

@@ -23,7 +23,7 @@ const images = [
 <template>
   <section class="w-full">
     <div
-      class="relative flex flex-col items-center pb-[52px] pt-[35px] sm:mt-32"
+      class="relative flex flex-col items-center pb-10 pt-[35px] sm:mt-32 sm:pb-[52px]"
     >
       <div class="absolute left-0 top-0 z-10 h-full w-full">
         <div class="container h-full w-full">

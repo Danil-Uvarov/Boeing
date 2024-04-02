@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import IconLogo from "assets/icons/IconLogo.vue";
-import IconFouLanes from "assets/icons/IconFouLanes.vue";
+import IconFouLanes from "~/components/icons/IconFouLanes.vue";
 </script>
 
 <template>

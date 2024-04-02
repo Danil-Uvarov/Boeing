@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import IconLogo from "assets/icons/IconLogo.vue";
-import IconTelegramBlack from "assets/icons/IconTelegramBlack.vue";
-import IconTwitterBlack from "assets/icons/IconTwitterBlack.vue";
+import IconLogo from "~/components/icons/IconLogo.vue";
+import IconTelegramBlack from "~/components/icons/IconTelegramBlack.vue";
+import IconTwitterBlack from "~/components/icons/IconTwitterBlack.vue";
 </script>
 
 <template>
@@ -14,8 +14,8 @@ import IconTwitterBlack from "assets/icons/IconTwitterBlack.vue";
       <div class="flex max-w-[768px] flex-col gap-2">
         <IconLogo class="max-h-[42px] max-w-[178px]" />
         <p class="max-w-[358px] font-inter text-base font-semibold sm:w-full">
-          GROK represents a new frontier in conversational AI technology,
-          offering humor along with unparalleled intelligence.
+          Inverse Boeing represents a new frontier in fighting corruption in
+          aviation, offering humor along with unparalleled intelligence.
         </p>
         <h5
           class="left-15 absolute bottom-8 font-inter text-base sm:static sm:text-white"
