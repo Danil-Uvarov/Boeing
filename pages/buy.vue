@@ -6,8 +6,22 @@ import IconCoinMarketCap from "assets/icons/IconCoinMarketCap.vue";
 import { ref } from "vue";
 import BaseInput from "~/components/ui/BaseInput.vue";
 
-const inputCalculate = ref();
-const calculates = () => {};
+const x = 1875;
+
+const base = ref("1");
+const inversboeng = ref(`${x}`);
+
+const changeBase = (value: string = "0") => {
+  const result = parseFloat(value) / x;
+
+  base.value = String(result.toFixed(6));
+};
+
+const changeBoeing = (value: string = "0") => {
+  const result = parseFloat(value) * x;
+
+  inversboeng.value = String(result.toFixed(0));
+};
 </script>
 
 <template>
@@ -20,23 +34,25 @@ const calculates = () => {};
     />
     <div class="container flex w-full flex-col items-center gap-10 py-20">
       <h1
-        class="text-center font-inter text-4xl font-bold text-white md:text-3xl"
+        class="small-text-shadow text-center font-inter text-4xl font-bold text-white md:text-[52px]"
       >
         BUY
         <mark class="text-yellow"> $INVBOE</mark>
         Pre-Sale Today!
       </h1>
-      <div class="flex flex-col gap-2">
+      <div class="flex w-full flex-col gap-2">
         <h2
-          class="text-center font-inter text-2xl font-black text-white md:text-lg"
+          class="small-text-shadow text-center font-inter text-2xl font-black text-white md:text-lg"
         >
           Presale Address
         </h2>
-        <p class="font-inter text-lg font-bold text-yellow">
+        <p
+          class="small-text-shadow max-w-full break-words text-center font-inter text-lg font-bold text-yellow"
+        >
           0x9e8412f74d2d4cf01B650021922dFcC1Ab99dbad
         </p>
       </div>
-      <div class="font-inter text-xl font-bold">
+      <div class="font-inter text-[18px] font-bold lg:text-[20px]">
         <p class="text-yellow">
           How to Bridge to Base and Buy Inverse Boeing (Pre-Sale)
         </p>
@@ -71,10 +87,11 @@ const calculates = () => {};
           >Pre-Sale Price Calculator
         </BaseButton>
         <div class="flex w-full items-center rounded-2xl bg-white p-4">
-          <div class="w-full">
-            <h4 class="font-inter text-xs font-medium text-grey">You pay</h4>
-            <BaseInput />
-          </div>
+          <BaseInput
+            v-model="base"
+            text="You pay"
+            @update:model-value="changeBoeing"
+          />
           <BaseButton
             text="white"
             class="w-full max-w-[160px] border border-yellow bg-primary"
@@ -85,12 +102,11 @@ const calculates = () => {};
           class="z-10 -my-10 h-10 w-10 rounded-xl border-4 border-yellow bg-white"
         />
         <div class="flex w-full items-center rounded-2xl bg-white p-4">
-          <div class="w-full">
-            <h4 class="font-inter text-xs font-medium text-grey">
-              You receive
-            </h4>
-            <BaseInput />
-          </div>
+          <BaseInput
+            v-model="inversboeng"
+            text="You receive"
+            @update:model-value="changeBase"
+          />
           <BaseButton
             text="white"
             class="w-full max-w-[160px] border border-yellow bg-primary"

@@ -1,9 +1,5 @@
 <script setup lang="ts">
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
-import BaseButton from "~/components/ui/BaseButton.vue";
 
 const images = [
   { img: "/vault-slide-1.webp" },
@@ -27,31 +23,42 @@ const images = [
 <template>
   <section class="w-full">
     <div
-      class="relative mx-auto flex max-w-[1700px] flex-col items-center py-10 sm:mt-32"
+      class="relative flex flex-col items-center pb-[52px] pt-[35px] sm:mt-32"
     >
-      <div
-        class="absolute inset-x-0 top-0 -z-10 mx-auto h-full w-full max-w-full bg-darkBlue xl:max-w-[1300px] xl:rounded-[28px]"
-      ></div>
-      <div class="px-[2rem] sm:pt-28">
-        <h2 class="text-nowrap text-5xl font-bold text-yellow">The Vault</h2>
-        <h2 class="pt-6 text-center text-lg text-white">Trade $INVBOE today</h2>
+      <div class="absolute left-0 top-0 z-10 h-full w-full">
+        <div class="container h-full w-full">
+          <div class="h-full w-full rounded-[28px] bg-darkBlue px-8"></div>
+        </div>
       </div>
-      <Swiper
-        :slides-per-view="1.5"
-        :space-between="24"
-        class="container z-20 mt-10 max-h-[720px] w-full sm:max-w-full"
-        :centeredSlides="true"
-      >
-        <SwiperSlide v-for="(image, index) in images" :key="index">
-          <img
-            loading="lazy"
-            :src="image.img"
-            alt=""
-            class="max-h-[620px] max-w-full object-contain"
-          />
-        </SwiperSlide>
-      </Swiper>
+
+      <div class="relative z-20 w-full">
+        <div class="pt-4 sm:pt-10">
+          <h2 class="text-nowrap text-center text-5xl font-bold text-yellow">
+            The Vault
+          </h2>
+          <h2 class="mt-4 text-center text-lg text-white">
+            Trade $INVBOE today
+          </h2>
+        </div>
+
+        <Swiper
+          :slides-per-view="1.5"
+          :space-between="24"
+          class="mt-10 max-h-[720px] w-full"
+          :centeredSlides="true"
+        >
+          <SwiperSlide v-for="(image, index) in images" :key="index">
+            <img
+              loading="lazy"
+              :src="image.img"
+              alt=""
+              class="max-h-[620px] max-w-full object-contain"
+            />
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </div>
+
     <img
       loading="lazy"
       src="/public/cloud-ballon.webp"

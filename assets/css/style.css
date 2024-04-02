@@ -87,3 +87,7 @@ html {
 * {
     background: none;
 }
+
+.small-text-shadow {
+    text-shadow: 3px 3px #000;
+}
