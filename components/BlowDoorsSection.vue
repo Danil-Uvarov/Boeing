@@ -23,7 +23,7 @@ import BaseButton from "~/components/ui/BaseButton.vue";
           class="lg:pt-26 pt-[18px] text-start text-xs font-medium text-white lg:text-2xl"
         >
           Want to take off? Well Inverse Boeing Coin is here to help. Inverse
-          Boeing is a coin based on base. We make traveling to space easy, you
+          Boeing is a coin based on Solana. We make traveling to space easy, you
           just have to remember one thing $INVBOE to Mars.
         </p>
         <div class="flex w-full flex-wrap gap-4 pt-5">

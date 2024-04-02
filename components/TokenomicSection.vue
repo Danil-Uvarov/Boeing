@@ -35,8 +35,8 @@ import BaseButton from "~/components/ui/BaseButton.vue";
             class="pt-6 text-center font-inter text-xs text-white md:pt-0 md:text-start md:text-lg"
           >
             <mark class="font-extrabold text-white">Inverse Boeing</mark>
-            operates on Base and is made for the community to interact with. Our
-            tokenomics model ensures smooth accessibility to
+            operates on Solana and is made for the community to interact with.
+            Our tokenomics model ensures smooth accessibility to
             <mark class="font-extrabold text-white">$INVBOE’s</mark>
             various features and services, empowering users to enjoy a the
             luxury life of

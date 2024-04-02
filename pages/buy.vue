@@ -6,15 +6,15 @@ import IconCoinMarketCap from "assets/icons/IconCoinMarketCap.vue";
 import { ref } from "vue";
 import BaseInput from "~/components/ui/BaseInput.vue";
 
-const x = 1875;
+const x = 37500;
 
-const base = ref("1");
+const solana = ref("1");
 const inversboeng = ref(`${x}`);
 
-const changeBase = (value: string = "0") => {
+const changeSolana = (value: string = "0") => {
   const result = parseFloat(value) / x;
 
-  base.value = String(result.toFixed(6));
+  solana.value = String(result.toFixed(6));
 };
 
 const changeBoeing = (value: string = "0") => {
@@ -30,11 +30,11 @@ const changeBoeing = (value: string = "0") => {
       loading="lazy"
       src="/background-skye.webp"
       alt=""
-      class="absolute inset-0 left-0 -z-10 h-full w-full object-cover"
+      class="absolute left-0 -z-10 h-full w-full object-cover"
     />
     <div class="container flex w-full flex-col items-center gap-10 py-20">
       <h1
-        class="small-text-shadow text-center font-inter text-4xl font-bold text-white md:text-[52px]"
+        class="small-text-shadow text-center font-inter text-4xl font-bold leading-[1.05] text-white md:text-[52px]"
       >
         BUY
         <mark class="text-yellow"> $INVBOE</mark>
@@ -49,28 +49,25 @@ const changeBoeing = (value: string = "0") => {
         <p
           class="small-text-shadow max-w-full break-words text-center font-inter text-lg font-bold text-yellow"
         >
-          0x9e8412f74d2d4cf01B650021922dFcC1Ab99dbad
+          87ygfe7B5So1QG92CteLDBrXqoGcLfiQ9X2rmo73qPjM
         </p>
       </div>
-      <div class="font-inter text-[18px] font-bold lg:text-[20px]">
-        <p class="text-yellow">
-          How to Bridge to Base and Buy Inverse Boeing (Pre-Sale)
+      <div class="font-inter text-[18px] lg:text-[20px]">
+        <p class="font-bold text-yellow">
+          Inverse Boeing Pre-Sale Instructions
         </p>
-        <ol class="flex flex-col gap-4 pt-4">
+        <ol class="flex max-w-[800px] flex-col gap-4 pt-4 font-medium">
           <li>
-            1. Set up a crypto wallet on the Base network using Coinbase Wallet.
-            If you're using a different wallet like MetaMask, follow these steps
-            to connect to Base.
+            1. Copy Wallet Address Listed above and send a minimum of ## Sol to
+            that address.
           </li>
           <li>
-            2. Transfer Ethereum (ETH) directly to your Base network wallet or
-            send it to your Ethereum wallet and bridge ETH to Base via the
-            official Coinbase bridge or the Orbiter Finance bridge.
+            2. Save the conformation and make sure to not change wallets before
+            Coin Launch.
           </li>
           <li>
-            3. Transfer Base to our the listed wallet to receive Inverse Boeing
-            Token post contract Deployment Period, you will receive the tokens
-            to the same wallet address.
+            3. Upon Contract Deployment and prior to Coin launch you will
+            receive your $Invboe tokens on that same wallet.
           </li>
         </ol>
       </div>
@@ -88,14 +85,16 @@ const changeBoeing = (value: string = "0") => {
         </BaseButton>
         <div class="flex w-full items-center rounded-2xl bg-white p-4">
           <BaseInput
-            v-model="base"
+            v-model="solana"
             text="You pay"
+            :maximum-fraction-digits="5"
             @update:model-value="changeBoeing"
           />
           <BaseButton
             text="white"
             class="w-full max-w-[160px] border border-yellow bg-primary"
-            >BASE
+          >
+            Solana
           </BaseButton>
         </div>
         <Arrow
@@ -105,23 +104,24 @@ const changeBoeing = (value: string = "0") => {
           <BaseInput
             v-model="inversboeng"
             text="You receive"
-            @update:model-value="changeBase"
+            @update:model-value="changeSolana"
           />
           <BaseButton
             text="white"
             class="w-full max-w-[160px] border border-yellow bg-primary"
-            >Inverse Boeing
+          >
+            Inverse Boeing
           </BaseButton>
         </div>
       </div>
       <h3
-        class="max-w-[617px] text-center font-inter text-sm font-semibold text-white md:text-[8px]"
+        class="max-w-[617px] text-center font-inter text-xs font-semibold leading-[1.2] text-white md:text-[14px]"
       >
-        <mark class="text-yellow">LEGAL DISCLAIMER:</mark> $INVBOE is a crypto
-        coin with no intrinsic value or expectation of financial return. Just
-        because some people are getting ridiculously rich buying crypto doesn’t
-        mean you definitely will. INVBOE is to be used strictly for getting laid
-        and for entertainment purposes only.
+        <mark class="text-yellow">LEGAL DISCLAIMER:</mark>
+        $INVBOE is a crypto coin with no intrinsic value or expectation of
+        financial return. Just because some people are getting ridiculously rich
+        buying crypto doesn’t mean you definitely will. INVBOE is to be used
+        strictly for getting laid and for entertainment purposes only.
       </h3>
       <div class="flex gap-10">
         <div class="flex gap-2.5">
